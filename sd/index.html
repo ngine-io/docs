@@ -659,9 +659,10 @@
 
 <h1 id="cloud-targets-service-discovery">Cloud Targets Service Discovery</h1>
 <h2 id="about">About</h2>
-<p>With Cloud Targets Service Discovery (CTSD), you can monitor your infrastructure across multiple clouds using the <a href="https://github.com/prometheus/node_exporter">Prometheus Node Exporter</a> installed on your cloud instances.</p>
-<p>Through the API, CTSD returns a Prometheus-compatible targets catalog (HTTP SD) that Prometheus can use to monitor your instances. The default port Prometheus uses to query your instances is <code>9100</code> on the public IP.</p>
-<p>Using Prometheus' relabeling feature, this port can be changed at will and the scraping address moved to a private network. Appropriate designations are provided for this purpose.</p>
+<p>With our Cloud Targets Service Discovery API, you will be able to monitor your dynmaic infrastructure using the <a href="https://github.com/prometheus/node_exporter">Prometheus Node Exporter</a> installed on your Cloud instances.</p>
+<p>Through the API, CTSD returns a Prometheus-compatible targets catalog (HTTP SD) that Prometheus can use to monitor your instances.</p>
+<p>The default port Prometheus uses to query your instances is <code>9100</code> on the public IP. Using Prometheus' relabeling feature, this port can be changed at will and the scraping address moved to a private network. Appropriate designations are provided for this purpose.</p>
+<p><img alt="" src="../images/sd/prom1.png" /></p>
 <h2 id="requirements">Requirements</h2>
 <ul>
 <li>Prometheus or compatible monitoring solution.</li>
@@ -669,7 +670,7 @@
 <li>An API token of your Cloud provider (read-only permission would be sufficient)</li>
 </ul>
 <h2 id="clouds">Clouds</h2>
-<p>Prometheus provides <a href="https://prometheus.io/docs/prometheus/latest/configuration/configuration/#configuration">Service Discovery</a> (SD) for a list of Clouds. Our service adds the following onto the list:</p>
+<p>Prometheus provides <a href="https://prometheus.io/docs/prometheus/latest/configuration/configuration/#configuration">Service Discovery</a> (SD) for a list of Clouds. Our service adds the following Cloud providers onto the list:</p>
 <ul>
 <li>cloudscale.ch (<a href="cloudscale_ch/">Setup</a>)</li>
 <li>Exoscale (<a href="exoscale/">Setup</a>)</li>
