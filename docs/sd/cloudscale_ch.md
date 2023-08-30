@@ -27,5 +27,5 @@ To test the results, you can use the following `curl` command:
 curl -X 'GET' \
   'https://api.ngine.cloud/cloud-sd/v1/cloudscale-ch' \
   -H 'accept: application/json' \
-  -H 'Authorization: Bearer <cloudscale api token'
+  -H 'Authorization: Bearer <cloudscale api token>'
 ```

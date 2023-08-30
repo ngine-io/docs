@@ -18,8 +18,8 @@ Using Prometheus' relabeling feature, this port can be changed at will and the s
 
 Prometheus provides [Service Discovery](https://prometheus.io/docs/prometheus/latest/configuration/configuration/#configuration) (SD) for a list of Clouds. Our service adds the following onto the list:
 
-- cloudscale.ch ([Setup](/sd/cloudscale_ch/))
-- Exoscale ([Setup](/sd/exoscale/))
+- cloudscale.ch ([Setup](cloudscale_ch.md))
+- Exoscale ([Setup](exoscale.md))
 
 ## FAQ
 
