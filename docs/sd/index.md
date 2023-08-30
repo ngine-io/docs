@@ -2,11 +2,13 @@
 
 ## About
 
-With Cloud Targets Service Discovery (CTSD), you can monitor your infrastructure across multiple clouds using the [Prometheus Node Exporter](https://github.com/prometheus/node_exporter) installed on your cloud instances.
+With our Cloud Targets Service Discovery API, you will be able to monitor your dynmaic infrastructure using the [Prometheus Node Exporter](https://github.com/prometheus/node_exporter) installed on your Cloud instances.
 
-Through the API, CTSD returns a Prometheus-compatible targets catalog (HTTP SD) that Prometheus can use to monitor your instances. The default port Prometheus uses to query your instances is `9100` on the public IP.
+Through the API, CTSD returns a Prometheus-compatible targets catalog (HTTP SD) that Prometheus can use to monitor your instances.
 
-Using Prometheus' relabeling feature, this port can be changed at will and the scraping address moved to a private network. Appropriate designations are provided for this purpose.
+The default port Prometheus uses to query your instances is `9100` on the public IP. Using Prometheus' relabeling feature, this port can be changed at will and the scraping address moved to a private network. Appropriate designations are provided for this purpose.
+
+![](../images/sd/prom1.png)
 
 ## Requirements
 
@@ -16,7 +18,7 @@ Using Prometheus' relabeling feature, this port can be changed at will and the s
 
 ## Clouds
 
-Prometheus provides [Service Discovery](https://prometheus.io/docs/prometheus/latest/configuration/configuration/#configuration) (SD) for a list of Clouds. Our service adds the following onto the list:
+Prometheus provides [Service Discovery](https://prometheus.io/docs/prometheus/latest/configuration/configuration/#configuration) (SD) for a list of Clouds. Our service adds the following Cloud providers onto the list:
 
 - cloudscale.ch ([Setup](cloudscale_ch.md))
 - Exoscale ([Setup](exoscale.md))
