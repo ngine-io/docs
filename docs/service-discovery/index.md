@@ -1,6 +1,6 @@
 # Cloud Service Discovery
 
-With our Cloud Service Discovery API, you will be able to monitor your infrastructure on Clouds currently not included in Prometheus.
+With our Cloud Service Discovery API, you will be able to monitor your infrastructure on Clouds currently not included in [Prometheus](https://prometheus.io/).
 
 ## How it works
 
