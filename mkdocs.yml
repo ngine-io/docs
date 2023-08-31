@@ -1,24 +1,24 @@
 site_name: "Services Handbook"
 nav:
   - Services:
-      - Autoscaling: 
-        - "": autoscaling/index.md
-      - Load Balancer: 
-        - "": load-balancer/index.md
-      - Fault Injection: 
-        - "": fault-injection/index.md
-      - Dynamic DNS: 
-        - "": dynamic-dns/index.md
-      - Service Discovery: 
-        - "": service-discovery/index.md
-        - Configrations:
-          - cloudscale.ch: service-discovery/cloudscale_ch.md
-          - Exoscale: service-discovery/exoscale.md
-        - FAQ: service-discovery/faq.md      
+      - Autoscaling:
+          - "": autoscaling/index.md
+      - Load Balancer:
+          - "": load-balancer/index.md
+      - Fault Injection:
+          - "": fault-injection/index.md
+      - Dynamic DNS:
+          - "": dynamic-dns/index.md
+      - Service Discovery:
+          - "": service-discovery/index.md
+          - Configrations:
+              - cloudscale.ch: service-discovery/cloudscale_ch.md
+              - Exoscale: service-discovery/exoscale.md
+          - FAQ: service-discovery/faq.md
   - About: index.md
 theme:
   font: false
-  logo: images/logo.png
+  logo: images/social-white.png
   name: material
   palette:
     primary: cyan
@@ -41,12 +41,12 @@ markdown_extensions:
 plugins:
   - search
 
-copyright: Copyright &copy; 2023 moser-systems.com
+copyright: '<img src="/images/logo.png" style="max-width:80px"> <br> Copyright &copy; 2023 moser-systems.com'
 
 extra:
-  generator: false
+  generator: true
   social:
-    - icon: fontawesome/brands/github 
+    - icon: fontawesome/brands/github
       link: https://github.com/ngine-io
 
 extra_css:
