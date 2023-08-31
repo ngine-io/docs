@@ -1,26 +1,53 @@
-site_name: Ngine Cloud Docs
-repo_url: https://github.com/ngine-io/docs
-edit_uri: edit/main/docs/
+site_name: "Services Handbook"
 nav:
-  - About: index.md
   - Services:
-      - Cloud Targets Service Discovery: sd/index.md
-
-  - Configurations:
-      - Service Discoveries:
-          - cloudscale.ch: sd/cloudscale_ch.md
-          - Exoscale: sd/exoscale.md
+      - Autoscaling: 
+        - "": autoscaling/index.md
+      - Load Balancer: 
+        - "": load-balancer/index.md
+      - Fault Injection: 
+        - "": fault-injection/index.md
+      - Dynamic DNS: 
+        - "": dynamic-dns/index.md
+      - Service Discovery: 
+        - "": service-discovery/index.md
+        - Configrations:
+          - cloudscale.ch: service-discovery/cloudscale_ch.md
+          - Exoscale: service-discovery/exoscale.md
+        - FAQ: service-discovery/faq.md      
+  - About: index.md
 theme:
+  font: false
+  logo: images/logo.png
   name: material
   palette:
     primary: cyan
     scheme: slate
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.indexes
+
 markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences
+  - pymdownx.details
   - admonition
+  - attr_list
+
 plugins:
   - search
+
+copyright: Copyright &copy; 2023 moser-systems.com
+
+extra:
+  generator: false
+  social:
+    - icon: fontawesome/brands/github 
+      link: https://github.com/ngine-io
+
+extra_css:
+  - stylesheets/extra.css
