@@ -41,7 +41,7 @@ markdown_extensions:
 plugins:
   - search
 
-copyright: '<img src="/images/logo.png" style="max-width:80px"> <br> Copyright &copy; 2023 moser-systems.com'
+copyright: '<img src="https://www.ngine.ch/images/logo.png" style="max-width:80px"> <br> Copyright &copy; 2023 moser-systems.com'
 
 extra:
   generator: true
