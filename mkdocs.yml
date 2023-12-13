@@ -12,7 +12,7 @@ nav:
           - "": dynamic-dns/index.md
       - Service Discovery:
           - "": service-discovery/index.md
-          - Configrations:
+          - Configurations:
               - cloudscale.ch: service-discovery/cloudscale_ch.md
               - Exoscale: service-discovery/exoscale.md
               - Apache CloudStack: service-discovery/cloudstack.md
